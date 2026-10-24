@@ -34,3 +34,14 @@ body{
 #clock{
     margin-right: 1250px;
 }
+.quit {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 100px;
+    background-color: #f6fafb;
+    color: #080707;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
