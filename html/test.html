@@ -1,5 +1,47 @@
 <!DOCTYPE html>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttonbox{
+        display: flex;
+    }
+</style>
+
+<script type="text/javascript">
+var choice1 = "This is choice 1";
+var choice2 = "This is choice 2";
+
+function docWrite(variable) {
+    document.write(variable);
+}
+
+function myFunction(){
+    console.log("Hello World!")
+}
+</script>
+
 <body>
     <h1>This is a test!</h1>
-    <p>Hello Caleb</p>
+    <p>Hello Caleb, my name is Macaden.</p>
+
+    <div id="button_div" class="buttonbox">
+        <button><script>docWrite(choice1)</script></button>
+        <button><script>docWrite(choice2)</script></button>
+    </div>
+
+    <script>
+    for (let i = 0; i < 4; i++) {
+        const button = document.createElement("button");
+        const node = document.createTextNode(choice1);
+        button.setAttribute("onclick", "myFunction()")
+        button.appendChild(node);
+
+        const element = document.getElementById("button_div");
+        element.appendChild(button);
+    }
+    </script>
+
 </body>
