@@ -1,4 +1,3 @@
-
 .flexy{
     display: flex;
     justify-content: center;
@@ -7,8 +6,8 @@
 }
 
 #clock, .clockhead{
-    flex
-    margin-left:auto;
+    display: flex;
+    margin-left: auto;
     margin-top: 200px;
 }
 
