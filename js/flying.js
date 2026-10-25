@@ -17,7 +17,7 @@ var obstacleCreationInProgress = false;
 
 // Array of friend images
 var images = [
-    '/photos/BadApple.jpg',
+    '/photos/newfairy.jpg',
     '/photos/BadBanana.jpg',
 ];
 
