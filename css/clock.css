@@ -1,47 +1,37 @@
-.flexy{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+  .flexy{
+  /* 1. Turn it into a flex container and center its contents */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Optional: stack children vertically */
 
-#clock, .clockhead{
-    display: flex;
-    margin-left: auto;
-    margin-top: 200px;
-}
+  /* 2. Make it a perfect square and turn it into a circle */
+  width: 500px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
 
-body{
-    background-color: rgb(215, 209, 202);
-}
+  /* 3. Add your visual border or background */
+  border: 2px solid #000000; 
+  background-color: #673d24;
 
-#clock{
-    color: black;
-    font-size: 4rem;
-    letter-spacing: 0.4rem;
+  /* 4. Keep contents from overflowing the rounded border */
+  overflow: hidden; 
+  gap: 10px;
 }
-
-.clockhead{
-    color: black;
-    font-size: 4rem;
-    letter-spacing: 0.2rem;
-}
-
-.clockhead{
-    margin-left: 525px;
-    
-}
-#clock{
-    margin-right: 1250px;
+body {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  min-height: 100vh;       /* Forces the body to take up the full screen height */
+  margin: 0;               /* Removes default browser margins */
+  background-color: #3b1f01;
+  font-size: 50px;
 }
 .quit {
-    position: absolute;
-    font-size: 20px;
-    top: 10px;
-    right: 100px;
-    background-color: #f6fafb;
-    color: #080707;
-    padding: 5px 10px;
-    border-radius: 5px;
+    display: flex;
+    padding: 20px;
+    gap: 100px;
+    color: #0022fe;
     text-decoration: none;
-  }
+    font-size: 50px;
+}
