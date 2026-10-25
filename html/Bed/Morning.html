@@ -1,3 +1,56 @@
-You wake in morning to see Facists have taken over.
-<a href="/html/Bed/Morning.html">Stay in bed</a>
-<a href="/html/Bed/TownHall.html">Wake up and go outside</a>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('/forest.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'medievalsharp';
+        }
+        .text-div{
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .button-div{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 35vh;
+        }
+        .button-grid button {
+            padding: 20px;
+            font-size: 16px;
+         }
+        .choice-button {
+            height: 100px;
+            width: 200px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-div">
+        <p>
+            You wake in morning to see Facists have taken over.
+        </p>
+    </div>
+
+    <div class="button-div">
+        <button class="choice-button"><a href="/html/Bed/Morning.html">Stay in bed</a>></button>
+        <button class="choice-button"><a href="/html/Bed/TownHall.html">Wake up and go outside</a></button>dSsd
+    </div>
+</body>
+
+
+
