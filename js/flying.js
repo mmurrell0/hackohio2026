@@ -17,8 +17,10 @@ var obstacleCreationInProgress = false;
 
 // Array of friend images
 var images = [
-    '/photos/newfairy.jpg',
-    '/photos/BadBanana.jpg',
+    '/Photos/GoodApple.png',
+    '/Photos/GoodBanana.png',
+    '/Photos/DragonFruit.png',
+    '/Photos/Grapes.png'
 ];
 
 // Get game dimensions
